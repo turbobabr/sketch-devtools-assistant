@@ -20,6 +20,27 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>app.png</string>
+			<key>CFBundleURLName</key>
+			<string>SketchDevToolsProtocolHandlerAssistant</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>skdtwstorm</string>
+				<string>skdtappcode</string>
+				<string>skdtsubl</string>
+				<string>skdttmate</string>
+				<string>skdtxcode</string>
+				<string>skdtmvim</string>
+				<string>skdtatom</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
