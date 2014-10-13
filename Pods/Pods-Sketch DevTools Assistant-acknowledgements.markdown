@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## MASPreferences
-
-MASPreferences is licensed under the BSD license.
-
 ## NSLogger
 
 BSD license follows (http://www.opensource.org/licenses/bsd-license.php)

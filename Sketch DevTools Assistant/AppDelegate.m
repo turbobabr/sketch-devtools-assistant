@@ -13,10 +13,7 @@
 #import "SDTActionsController.h"
 
 @interface AppDelegate ()
-@property (unsafe_unretained) IBOutlet NSTextView *logView;
 @property (weak) IBOutlet NSMenu *statusMenu;
-
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
@@ -98,7 +95,7 @@
 }
 
 -(void)logEvent:(NSURL*)url {
-    self.logView.string=[NSString stringWithFormat:@"%@\n%@",self.logView.string,url];
+    // TODO: There should be logger here!
 }
 
 - (void)workspaceDidLaunchApplicationNotification:(NSNotification*)notification {

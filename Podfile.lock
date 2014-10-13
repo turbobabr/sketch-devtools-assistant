@@ -1,13 +1,10 @@
 PODS:
-  - MASPreferences (1.1.2)
   - NSLogger (1.5)
 
 DEPENDENCIES:
-  - MASPreferences
   - NSLogger
 
 SPEC CHECKSUMS:
-  MASPreferences: 48debf3a161039bb979e617b7416bc07bd879f75
   NSLogger: 84ed0bf00985df483153ce344d8171c9ec83be2b
 
 COCOAPODS: 0.33.1

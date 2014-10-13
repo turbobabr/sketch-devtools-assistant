@@ -26,7 +26,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLIconFile</key>
-			<string>app.png</string>
+			<string>app</string>
 			<key>CFBundleURLName</key>
 			<string>SketchDevToolsProtocolHandlerAssistant</string>
 			<key>CFBundleURLSchemes</key>

@@ -59,7 +59,7 @@
 		553C9F9919E56FE4001C5989 /* Sketch_DevTools_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sketch_DevTools_AssistantTests.m; sourceTree = "<group>"; };
 		553C9FA319E576E5001C5989 /* SDTProtocolHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTProtocolHandler.h; sourceTree = "<group>"; };
 		553C9FA419E576E5001C5989 /* SDTProtocolHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTProtocolHandler.m; sourceTree = "<group>"; };
-		553C9FA619E57784001C5989 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
+		553C9FA619E57784001C5989 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app.png; path = ../app.png; sourceTree = "<group>"; };
 		553C9FA819E582DF001C5989 /* CocoaScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaScript.framework; sourceTree = "<group>"; };
 		553C9FB619E649FA001C5989 /* SDTScriptableAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTScriptableAction.h; sourceTree = "<group>"; };
 		553C9FB719E649FA001C5989 /* SDTScriptableAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTScriptableAction.m; sourceTree = "<group>"; };
@@ -102,7 +102,6 @@
 		553C9F7719E56FE3001C5989 = {
 			isa = PBXGroup;
 			children = (
-				553C9FA619E57784001C5989 /* app.png */,
 				553C9F8219E56FE3001C5989 /* Sketch DevTools Assistant */,
 				553C9F9619E56FE4001C5989 /* Sketch DevTools AssistantTests */,
 				553C9F8119E56FE3001C5989 /* Products */,
@@ -144,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				553C9F8419E56FE3001C5989 /* Info.plist */,
+				553C9FA619E57784001C5989 /* app.png */,
 				553C9F8519E56FE3001C5989 /* main.m */,
 			);
 			name = "Supporting Files";

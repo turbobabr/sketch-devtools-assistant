@@ -2,9 +2,7 @@
 # platform :ios, "6.0"
 
 target "Sketch DevTools Assistant" do
-
 pod "NSLogger"
-pod "MASPreferences"
 end
 
 target "Sketch DevTools AssistantTests" do
