@@ -8,22 +8,58 @@
 
 #import "AppDelegate.h"
 #import "SDTProtocolHandler.h"
+#import "SDTScriptableAction.h"
+#import <CocoaScript/COScript.h>
+#import "SDTActionsController.h"
 
 @interface AppDelegate ()
 @property (unsafe_unretained) IBOutlet NSTextView *logView;
+@property (weak) IBOutlet NSMenu *statusMenu;
 
 @property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
+- (IBAction)onPreferencesMenu:(NSMenuItem *)sender {
+    // TODO: To implement.
+}
+
+- (IBAction)onManageActionsMenu:(NSMenuItem *)sender {
+        // TODO: To implement.
+}
+
+- (IBAction)onEventLogMenu:(NSMenuItem *)sender {
+        // TODO: To implement.
+}
+
+- (IBAction)onMenuQuit:(NSMenuItem *)sender {
+    [NSApp terminate:self];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    self.logView.string=@"Hello!";
+    [SDTActionsController listen];
+
+    // Listen to Sketch App launch notification.
+    NSNotificationCenter* notCenter=[[NSWorkspace sharedWorkspace] notificationCenter];
+    [notCenter addObserver:self
+                  selector:@selector(workspaceDidLaunchApplicationNotification:)
+                      name:NSWorkspaceDidLaunchApplicationNotification object:nil];
+    
+   
+    // Initialize Status Bar.
+    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusBar.menu = self.statusMenu;
+    self.statusBar.highlightMode = YES;
+    [self.statusBar setImage:[NSImage imageNamed:@"trayIcon"]];
+    
+    [self.statusBar setAlternateImage:[NSImage imageNamed:@"trayIconAlternate"]];
     
 }
 
+
 -(void)applicationWillFinishLaunching:(NSNotification *)notification {
+    
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(getURL:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
 
@@ -31,7 +67,6 @@
 {
     NSURL* url=[NSURL URLWithString:[[event paramDescriptorForKeyword:keyDirectObject] stringValue]];
     if(url && [url.host isEqualToString:@"open"]) {
-        
         
         [self logEvent:url];
         
@@ -66,8 +101,17 @@
     self.logView.string=[NSString stringWithFormat:@"%@\n%@",self.logView.string,url];
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (void)workspaceDidLaunchApplicationNotification:(NSNotification*)notification {
+    
+    NSString* bundleID=notification.userInfo[@"NSApplicationBundleIdentifier"];
+    if(bundleID && ([bundleID isEqualToString:@"com.bohemiancoding.sketch3.beta"] || [bundleID isEqualToString:@"com.bohemiancoding.sketch3"])) {
+        [[SDTActionsController sharedInstance] runActions:bundleID];
+    }
 }
+
+- (void)applicationWillTerminate:(NSNotification *)aNotification {
+    [SDTActionsController destroy];
+}
+
 
 @end

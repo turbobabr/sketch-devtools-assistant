@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="logView" destination="vyc-PH-rkx" id="zMN-yg-5P6"/>
+                <outlet property="statusMenu" destination="7Xj-bh-cfb" id="7Ml-lv-UJf"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -667,7 +668,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Sketch DevTools Assistant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Sketch DevTools Assistant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="695" height="470"/>
@@ -691,7 +692,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="vyc-PH-rkx">
-                                    <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="403"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="653" height="403"/>
@@ -716,5 +717,34 @@
             </view>
             <point key="canvasLocation" x="530.5" y="532"/>
         </window>
+        <menu id="7Xj-bh-cfb">
+            <items>
+                <menuItem title="Preferences..." keyEquivalent="," id="eNg-HY-FH4">
+                    <connections>
+                        <action selector="onPreferencesMenu:" target="Voe-Tx-rLC" id="JUb-cr-uKx"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Manage Actions..." id="ZlT-tu-v9U">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onManageActionsMenu:" target="Voe-Tx-rLC" id="UrM-gT-EJV"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Events Log..." id="o1v-5L-9hb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onEventLogMenu:" target="Voe-Tx-rLC" id="o7A-pl-bR7"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="KvW-s3-K23"/>
+                <menuItem title="Quit" id="TVF-Le-6kI">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onMenuQuit:" target="Voe-Tx-rLC" id="2sM-1R-JgH"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-569.5" y="743.5"/>
+        </menu>
     </objects>
 </document>

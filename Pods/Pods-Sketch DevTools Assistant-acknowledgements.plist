@@ -14,6 +14,14 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>MASPreferences is licensed under the BSD license.</string>
+			<key>Title</key>
+			<string>MASPreferences</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>BSD license follows (http://www.opensource.org/licenses/bsd-license.php)
 
 Copyright (c) 2010-2013, Florent Pillet All rights reserved.

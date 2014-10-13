@@ -15,6 +15,11 @@
 		553C9F9A19E56FE4001C5989 /* Sketch_DevTools_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9F9919E56FE4001C5989 /* Sketch_DevTools_AssistantTests.m */; };
 		553C9FA519E576E5001C5989 /* SDTProtocolHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9FA419E576E5001C5989 /* SDTProtocolHandler.m */; };
 		553C9FA719E57784001C5989 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 553C9FA619E57784001C5989 /* app.png */; };
+		553C9FA919E582DF001C5989 /* CocoaScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553C9FA819E582DF001C5989 /* CocoaScript.framework */; };
+		553C9FB019E6335F001C5989 /* CocoaScript.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 553C9FA819E582DF001C5989 /* CocoaScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		553C9FB819E649FA001C5989 /* SDTScriptableAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9FB719E649FA001C5989 /* SDTScriptableAction.m */; };
+		553C9FBB19E66F16001C5989 /* SDTActionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9FBA19E66F16001C5989 /* SDTActionsController.m */; };
+		55CE243919EB96FA00D620EC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CE243819EB96FA00D620EC /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,19 @@
 			remoteInfo = "Sketch DevTools Assistant";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		553C9FAD19E58DF0001C5989 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				553C9FB019E6335F001C5989 /* CocoaScript.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4250E675247648569DCF6D30 /* libPods-Sketch DevTools Assistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sketch DevTools Assistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +60,13 @@
 		553C9FA319E576E5001C5989 /* SDTProtocolHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTProtocolHandler.h; sourceTree = "<group>"; };
 		553C9FA419E576E5001C5989 /* SDTProtocolHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTProtocolHandler.m; sourceTree = "<group>"; };
 		553C9FA619E57784001C5989 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
+		553C9FA819E582DF001C5989 /* CocoaScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaScript.framework; sourceTree = "<group>"; };
+		553C9FB619E649FA001C5989 /* SDTScriptableAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTScriptableAction.h; sourceTree = "<group>"; };
+		553C9FB719E649FA001C5989 /* SDTScriptableAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTScriptableAction.m; sourceTree = "<group>"; };
+		553C9FB919E66F16001C5989 /* SDTActionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTActionsController.h; sourceTree = "<group>"; };
+		553C9FBA19E66F16001C5989 /* SDTActionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTActionsController.m; sourceTree = "<group>"; };
+		55CE243719EB96FA00D620EC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		55CE243819EB96FA00D620EC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		583E8CC6465B490EBBC24679 /* Pods-Sketch DevTools Assistant.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sketch DevTools Assistant.xcconfig"; path = "Pods/Pods-Sketch DevTools Assistant.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2663F00CCDF94C3488A5452C /* libPods-Sketch DevTools Assistant.a in Frameworks */,
+				553C9FA919E582DF001C5989 /* CocoaScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +93,7 @@
 		198D17F5A0504EFEA07F49F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				553C9FA819E582DF001C5989 /* CocoaScript.framework */,
 				4250E675247648569DCF6D30 /* libPods-Sketch DevTools Assistant.a */,
 			);
 			name = Frameworks;
@@ -103,6 +130,12 @@
 				553C9F8A19E56FE3001C5989 /* Images.xcassets */,
 				553C9F8C19E56FE3001C5989 /* MainMenu.xib */,
 				553C9F8319E56FE3001C5989 /* Supporting Files */,
+				553C9FB619E649FA001C5989 /* SDTScriptableAction.h */,
+				553C9FB719E649FA001C5989 /* SDTScriptableAction.m */,
+				553C9FB919E66F16001C5989 /* SDTActionsController.h */,
+				553C9FBA19E66F16001C5989 /* SDTActionsController.m */,
+				55CE243719EB96FA00D620EC /* Constants.h */,
+				55CE243819EB96FA00D620EC /* Constants.m */,
 			);
 			path = "Sketch DevTools Assistant";
 			sourceTree = "<group>";
@@ -145,6 +178,7 @@
 				553C9F7D19E56FE3001C5989 /* Frameworks */,
 				553C9F7E19E56FE3001C5989 /* Resources */,
 				46CDDF5498FB474D8C28F59F /* Copy Pods Resources */,
+				553C9FAD19E58DF0001C5989 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -268,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553C9FB819E649FA001C5989 /* SDTScriptableAction.m in Sources */,
 				553C9F8919E56FE3001C5989 /* AppDelegate.m in Sources */,
 				553C9FA519E576E5001C5989 /* SDTProtocolHandler.m in Sources */,
 				553C9F8619E56FE3001C5989 /* main.m in Sources */,
+				55CE243919EB96FA00D620EC /* Constants.m in Sources */,
+				553C9FBB19E66F16001C5989 /* SDTActionsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Sketch DevTools Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Sketch DevTools Assistant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

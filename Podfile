@@ -4,7 +4,7 @@
 target "Sketch DevTools Assistant" do
 
 pod "NSLogger"
-
+pod "MASPreferences"
 end
 
 target "Sketch DevTools AssistantTests" do
