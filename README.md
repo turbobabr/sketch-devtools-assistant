@@ -14,8 +14,11 @@ Without this app installed all the listed editors will not work with the `Jump T
 ## Installation
 1. Download an archive [Sketch DevTools Assistant.zip]() with compiled app and unzip it
 2. Copy `Sketch DevTools Assistant.app` to the `Applications` folder
-3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu.
-4. Run the application
+3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu like this:
+<img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/open_app.png" width="500" height="398">
+4. Run the application. If everything works fine you will see the app icon in the tray:
+
+<img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/tray_status.png">
 
 ## Compiling
 
