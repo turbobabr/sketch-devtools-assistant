@@ -1,7 +1,7 @@
 Sketch DevTools Assistant
 =========================
 
-Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools]() solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
+Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
 - Atom
 - Sublime Text
 - WebStorm
