@@ -51,6 +51,8 @@ If you discover any issue or have any suggestions for improvement of the plugin,
 
 Sketch DevTools Assistant uses [CocoaScript](http://github.com/ccgus/CocoaScript) framework by [August Mueller](http://github.com/ccgus) for running Sketch plugins using actions or automation.
 
+The [flat Sketch icon desing](https://dribbble.com/shots/1705797-Sketch-App-Icon-Yosemite-Edition?list=users&offset=0) for the app was shamelessly borrowed from [Mehmet Gozetlik](http://dribbble.com/Antrepo). Thanks you Mehmet for the great work! :)
+
 ## License
 
 The MIT License (MIT)
