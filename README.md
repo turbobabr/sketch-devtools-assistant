@@ -37,7 +37,11 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 ### Using automation to run plugins & scripts
 
+> TODO: Expanded description with diagram.
+
 #### Run script at path
+
+> TODO: Description + Sandboxing warning for absolute paths!
 
 Absolute file path:
 
@@ -49,6 +53,8 @@ end tell
 
 Relative file path:
 
+> TODO: Description + Beta/Release/Sandboxed warning for relative paths!
+
 ```AppleScript
 tell application "Sketch DevTools Assistant"
   run script at path "./MyPlugins/MakeMePretty.sketchplugin"
@@ -56,6 +62,8 @@ end tell
 ```
 
 Passing data object to the script:
+
+> TODO: Decription + Advanced Example + JS Dump.
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
@@ -76,6 +84,8 @@ if(layer) {
 ```
 
 #### Run script as a string
+
+> TODO: Description.
 
 ```AppleScript
 tell application "Sketch DevTools Assistant" 
