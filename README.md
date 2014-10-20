@@ -35,9 +35,53 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 > Content goes here...
 
-### Using automation to run plugins
+### Using automation to run plugins & scripts
 
-> Content goes here...
+#### Run script at path
+
+Absolute file path:
+
+```AppleScript
+tell application "Sketch DevTools Assistant"
+run script at path "~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/MyPlugins/MakeMePretty.sketchplugin"
+end tell
+```
+
+Relative file path:
+
+```AppleScript
+tell application "Sketch DevTools Assistant"
+  run script at path "./MyPlugins/MakeMePretty.sketchplugin"
+end tell
+```
+
+Passing data object to the script:
+
+```AppleScript
+tell application "Sketch DevTools Assistant"
+	set colorData to "{ \"color\":\"#FF0000\" }"
+	run script at path "./Playground/Playground.sketchplugin" with data colorData
+end tell
+```
+
+Querying passed object:
+
+```JavaScript
+var hexColor=$data.color;
+var layer=selection.firstObject();
+if(layer) {
+    var newColor=MSColor.colorWithHex_alpha(hexColor,1);
+    layer.style().fill().color=newColor;
+}
+```
+
+#### Run script as a string
+
+```AppleScript
+tell application "Sketch DevTools Assistant" 
+	run script "selection.firstObject().frame().width=250;"
+end tell
+```
 
 ## Version history
 
