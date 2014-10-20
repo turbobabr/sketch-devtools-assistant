@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="Sketch DevTools Assistant">
+	
+	<suite name="SketchDevTools Assistant Suite" code="Scmd" description="Sketch DevTools Assistant Scripts">
+		
+		<command name="run script at path" code="scmd2Run" description="Runs script at a given path">
+			<cocoa class="SDTAppleScriptCommandRunScriptAtPath"/>
+			<direct-parameter type="text" name="filePath" optional="no" description="The file path of the script to run"/>
+            
+            <parameter name="with data" code="data" type="text" optional="yes" description="An optional parameter containing JSON string to be passed to script as input data">
+                <cocoa key="data"/>
+            </parameter>
+		</command>
+        
+        <command name="run script" code="scmd3Run" description="Runs script">
+            <cocoa class="SDTAppleScriptCommandRunScript"/>
+            <direct-parameter type="text" name="scriptSource" optional="no" description="A string containing script source"/>
+            
+            <parameter name="with data" code="data" type="text" optional="yes" description="An optional parameter containing JSON string to be passed to script as input data">
+                <cocoa key="data"/>
+            </parameter>
+        </command>
+		
+        <!--
+		<command name="run trigger" code="fcmd2Run" description="Run Fuzzy Commander process">
+			<cocoa class="FCAppleScriptCommandRun"/>
+			
+			<direct-parameter type="text" optional="yes" description=""/>
+			
+			<parameter name="in workflow" code="work" type="text" optional="no" description="The process identifer">
+				<cocoa key="process"/>
+			</parameter>
+			
+			<parameter name="with argument" code="argu" type="text" optional="yes" description="An optional argument">
+				<cocoa key="argument"/>
+			</parameter>
+			
+		</command>
+         -->
+		
+	</suite>
+	
+</dictionary>

@@ -207,6 +207,7 @@
     SEL sel=NSSelectorFromString(@"runPluginAtURL:");
     if([appController respondsToSelector:sel]) {
         [appController performSelector:sel withObject:url];
+        // [appController performSelector:NSSelectorFromString(@"refreshCurrentDocument")];
     }
 };
 
@@ -216,6 +217,7 @@
     SEL sel=NSSelectorFromString(@"runPluginScript:");
     if([appController respondsToSelector:sel]) {
         [appController performSelector:sel withObject:source];
+        // [appController performSelector:NSSelectorFromString(@"refreshCurrentDocument")];
     }
 }
 

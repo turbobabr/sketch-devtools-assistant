@@ -19,6 +19,11 @@
 		553C9FB019E6335F001C5989 /* CocoaScript.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 553C9FA819E582DF001C5989 /* CocoaScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		553C9FB819E649FA001C5989 /* SDTScriptableAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9FB719E649FA001C5989 /* SDTScriptableAction.m */; };
 		553C9FBB19E66F16001C5989 /* SDTActionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553C9FBA19E66F16001C5989 /* SDTActionsController.m */; };
+		5589FACA19F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589FAC919F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.m */; };
+		5589FACC19F4AEC6005764C4 /* Sketch DevTools Assistant.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 5589FACB19F4AEC6005764C4 /* Sketch DevTools Assistant.sdef */; };
+		5589FACF19F4C218005764C4 /* SDTAppleScriptCommandRunScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589FACE19F4C218005764C4 /* SDTAppleScriptCommandRunScript.m */; };
+		5589FAD219F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589FAD119F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.m */; };
+		5589FAD619F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589FAD519F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.m */; };
 		55CE243919EB96FA00D620EC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CE243819EB96FA00D620EC /* Constants.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +70,15 @@
 		553C9FB719E649FA001C5989 /* SDTScriptableAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTScriptableAction.m; sourceTree = "<group>"; };
 		553C9FB919E66F16001C5989 /* SDTActionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTActionsController.h; sourceTree = "<group>"; };
 		553C9FBA19E66F16001C5989 /* SDTActionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTActionsController.m; sourceTree = "<group>"; };
+		5589FAC819F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTAppleScriptCommandRunScriptAtPath.h; sourceTree = "<group>"; };
+		5589FAC919F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTAppleScriptCommandRunScriptAtPath.m; sourceTree = "<group>"; };
+		5589FACB19F4AEC6005764C4 /* Sketch DevTools Assistant.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Sketch DevTools Assistant.sdef"; sourceTree = "<group>"; };
+		5589FACD19F4C218005764C4 /* SDTAppleScriptCommandRunScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTAppleScriptCommandRunScript.h; sourceTree = "<group>"; };
+		5589FACE19F4C218005764C4 /* SDTAppleScriptCommandRunScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTAppleScriptCommandRunScript.m; sourceTree = "<group>"; };
+		5589FAD019F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+OBCodeSigningInfo.h"; sourceTree = "<group>"; };
+		5589FAD119F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+OBCodeSigningInfo.m"; sourceTree = "<group>"; };
+		5589FAD419F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTAppleScriptCommandRunScriptBase.h; sourceTree = "<group>"; };
+		5589FAD519F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTAppleScriptCommandRunScriptBase.m; sourceTree = "<group>"; };
 		55CE243719EB96FA00D620EC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		55CE243819EB96FA00D620EC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		583E8CC6465B490EBBC24679 /* Pods-Sketch DevTools Assistant.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sketch DevTools Assistant.xcconfig"; path = "Pods/Pods-Sketch DevTools Assistant.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +136,8 @@
 		553C9F8219E56FE3001C5989 /* Sketch DevTools Assistant */ = {
 			isa = PBXGroup;
 			children = (
+				5589FAD319F52C19005764C4 /* Categories */,
+				5589FAC719F4AD91005764C4 /* Scripting */,
 				553C9FA319E576E5001C5989 /* SDTProtocolHandler.h */,
 				553C9FA419E576E5001C5989 /* SDTProtocolHandler.m */,
 				553C9F8719E56FE3001C5989 /* AppDelegate.h */,
@@ -164,6 +180,29 @@
 				553C9F9819E56FE4001C5989 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5589FAC719F4AD91005764C4 /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				5589FACB19F4AEC6005764C4 /* Sketch DevTools Assistant.sdef */,
+				5589FAC819F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.h */,
+				5589FAC919F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.m */,
+				5589FACD19F4C218005764C4 /* SDTAppleScriptCommandRunScript.h */,
+				5589FACE19F4C218005764C4 /* SDTAppleScriptCommandRunScript.m */,
+				5589FAD419F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.h */,
+				5589FAD519F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.m */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
+		5589FAD319F52C19005764C4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5589FAD019F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.h */,
+				5589FAD119F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +290,7 @@
 			files = (
 				553C9FA719E57784001C5989 /* app.png in Resources */,
 				553C9F8B19E56FE3001C5989 /* Images.xcassets in Resources */,
+				5589FACC19F4AEC6005764C4 /* Sketch DevTools Assistant.sdef in Resources */,
 				553C9F8E19E56FE3001C5989 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,8 +344,12 @@
 			files = (
 				553C9FB819E649FA001C5989 /* SDTScriptableAction.m in Sources */,
 				553C9F8919E56FE3001C5989 /* AppDelegate.m in Sources */,
+				5589FACA19F4ADC9005764C4 /* SDTAppleScriptCommandRunScriptAtPath.m in Sources */,
 				553C9FA519E576E5001C5989 /* SDTProtocolHandler.m in Sources */,
+				5589FAD219F50A6C005764C4 /* NSBundle+OBCodeSigningInfo.m in Sources */,
+				5589FACF19F4C218005764C4 /* SDTAppleScriptCommandRunScript.m in Sources */,
 				553C9F8619E56FE3001C5989 /* main.m in Sources */,
+				5589FAD619F52C80005764C4 /* SDTAppleScriptCommandRunScriptBase.m in Sources */,
 				55CE243919EB96FA00D620EC /* Constants.m in Sources */,
 				553C9FBB19E66F16001C5989 /* SDTActionsController.m in Sources */,
 			);
