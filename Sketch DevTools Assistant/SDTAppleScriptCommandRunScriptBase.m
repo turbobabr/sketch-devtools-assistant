@@ -42,7 +42,7 @@
         return [NSString pathWithComponents:[pluginsRoot.pathComponents arrayByAddingObjectsFromArray:components]];
     }
     
-    return filePath;
+    return [filePath stringByExpandingTildeInPath];
 }
 
 -(NSDictionary*)runningEnvForBundleWithIdentifier:(NSString*)bundleIdentifier {
