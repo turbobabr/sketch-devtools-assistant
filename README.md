@@ -1,6 +1,7 @@
 Sketch DevTools Assistant
 =========================
-> <span style='color: #D0021B;'>Work in progress...</style>
+
+Sketch DevTools Assistant plays a main role as a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution, but it can be used as a standalone solution to run Sketch App plugins & scripts fron an external application.
 
 ## Installation
 1. Download an archive [Sketch DevTools Assistant.zip]() with compiled app and unzip it
@@ -106,7 +107,7 @@ end tell
 
 ## Using Scriptable Actions
 
-> Content goes here...
+This helper application supports so called `Scriptable Actions`. At this very moment the only thing they allow to do is to run a plugin or script on Sketch App Launch. Assistant app doesn't have any UI to manage these actions, but you can use [sketch-runtime](https://github.com/turbobabr/sketch-runtime) framework to do that.
 
 
 ## Version history
