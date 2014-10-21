@@ -1,16 +1,7 @@
 Sketch DevTools Assistant
 =========================
-> <span style='color: #D0021B;'>Work in progres...</style>
+> <span style='color: #D0021B;'>Work in progress...</style>
 
-Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
-- Atom
-- Sublime Text
-- WebStorm
-- AppCode
-- XCode
-- MacVim
-
-Without this app installed all the listed editors will not work with the `Jump To Code` feature of DevTool.
 
 ## Installation
 1. Download an archive [Sketch DevTools Assistant.zip]() with compiled app and unzip it
@@ -25,17 +16,19 @@ Without this app installed all the listed editors will not work with the `Jump T
 
 If you don't want to use unsigned binary you can just clone this repo, compile the app, put it into the `Applications` folder and run it.
 
-## Usage
+## How and why protocol handling works
 
-### How and why protocol handling works
+Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
+- Atom
+- Sublime Text
+- WebStorm
+- AppCode
+- XCode
+- MacVim
 
-> Content goes here...
+Without this app installed all the listed editors will not work with the `Jump To Code` feature of DevTool.
 
-### Running scripts on Sketch launch
-
-> Content goes here...
-
-### Running plugins & script from an external application
+## Running plugins & scripts from an external application
 
 Sketch DevTools Assistant is a scriptable application that provides a convenient way of running plugins and scripts from external applications like [Alfred](http://www.alfredapp.com/) using [AppleScript](http://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html) scripts. 
 
@@ -111,6 +104,11 @@ tell application "Sketch DevTools Assistant"
 	run script "selection.firstObject().frame().width=250;"
 end tell
 ```
+
+## Using Scriptable Actions
+
+> Content goes here...
+
 
 ## Version history
 
