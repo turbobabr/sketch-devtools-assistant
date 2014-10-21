@@ -37,13 +37,13 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 ### Using automation to run plugins & scripts
 
-> TODO: Expanded description with diagram.
+Sketch DevTools Assistant is a scriptable application that provides a convenient way of running plugins and scripts from external applications like [Alfred](http://www.alfredapp.com/) using [AppleScript](http://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html) scripts. 
 
-#### Run script at path
+This technique works greate both with sandboxed and non-sandboxed versions of Sketch App. You have several options of running a script that are listed out below:
+
+#### Run script at absolute path
 
 > TODO: Description + Sandboxing warning for absolute paths!
-
-Absolute file path:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
@@ -51,7 +51,7 @@ run script at path "~/Library/Application Support/com.bohemiancoding.sketch3/Plu
 end tell
 ```
 
-Relative file path:
+#### Run script with relative file path
 
 > TODO: Description + Beta/Release/Sandboxed warning for relative paths!
 
@@ -60,6 +60,8 @@ tell application "Sketch DevTools Assistant"
   run script at path "./MyPlugins/MakeMePretty.sketchplugin"
 end tell
 ```
+
+#### Passing optional data object to the script
 
 Passing data object to the script:
 
