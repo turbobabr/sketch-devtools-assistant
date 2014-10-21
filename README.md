@@ -2,7 +2,6 @@ Sketch DevTools Assistant
 =========================
 > <span style='color: #D0021B;'>Work in progress...</style>
 
-
 ## Installation
 1. Download an archive [Sketch DevTools Assistant.zip]() with compiled app and unzip it
 2. Copy `Sketch DevTools Assistant.app` to the `Applications` folder
@@ -16,7 +15,7 @@ Sketch DevTools Assistant
 
 If you don't want to use unsigned binary you can just clone this repo, compile the app, put it into the `Applications` folder and run it.
 
-## How and why protocol handling works
+## Protocol handling & 'Jump To Code' feature
 
 Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
 - Atom
@@ -26,7 +25,7 @@ Sketch DevTools Assistant is a helper OSX application that works together with [
 - XCode
 - MacVim
 
-Without this app installed all the listed editors will not work with the `Jump To Code` feature of DevTool.
+Without this app installed all the listed editors will not work with the `Jump To Code` feature of DevTools.
 
 ## Running plugins & scripts from an external application
 
