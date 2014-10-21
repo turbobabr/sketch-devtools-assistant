@@ -31,11 +31,11 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 > Content goes here...
 
-### Using actions
+### Running scripts on Sketch launch
 
 > Content goes here...
 
-### Using automation to run plugins & scripts
+### Running plugins & script from an external application
 
 Sketch DevTools Assistant is a scriptable application that provides a convenient way of running plugins and scripts from external applications like [Alfred](http://www.alfredapp.com/) using [AppleScript](http://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html) scripts. 
 
