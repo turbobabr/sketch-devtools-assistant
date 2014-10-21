@@ -68,7 +68,7 @@ end tell
 
 There is a very handy option to pass some arbitrary parameters to you CocoaScript script in run-time. You can pass any JSON string generated on a side of external app to your sccript using optional `with data` parameter.
 
-Take a lot at the following AppleScript. It passes a JSON string that represents an object that contains `color` field:
+Take a look at the following AppleScript. It passes a JSON string that represents an object that contains `color` field:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
@@ -77,7 +77,7 @@ tell application "Sketch DevTools Assistant"
 end tell
 ```
 
-Right after script launch the provided JSON string will be available in your CocoaScript as `$data` variable:
+Right after script launch the provided JSON string will be available in the CocoaScript as `$data` variable and we can use it to obtain the `color` field in order to set a new color for selected layer fill:
 
 ```JavaScript
 var hexColor=$data.color;
@@ -104,7 +104,7 @@ Then this modified script is saved to a temoprary file and get run.
 
 #### Run script as a string
 
-> TODO: Description.
+The last option available is running script as a string. You don't have to provide any script file path, just give it a string with your CocoaScript like this:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant" 
