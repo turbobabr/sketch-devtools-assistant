@@ -1,10 +1,10 @@
 Sketch DevTools Assistant
 =========================
 
-Sketch DevTools Assistant plays a main role as a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution, but it can be used as a standalone solution to run Sketch App plugins & scripts fron an external application.
+Sketch DevTools Assistant plays a main role as a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution, but it can be used as a standalone solution to run Sketch App plugins & scripts from an external application.
 
 ## Installation
-1. Download an archive [Sketch DevTools Assistant.zip]() with compiled app and unzip it
+1. Download an archived file [Sketch DevTools Assistant.zip]() with compiled app and unzip it
 2. Copy `Sketch DevTools Assistant.app` to the `Applications` folder
 3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu like this:
 <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/open_app.png" width="500" height="398">
