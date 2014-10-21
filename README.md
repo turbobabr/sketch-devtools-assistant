@@ -39,21 +39,24 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 Sketch DevTools Assistant is a scriptable application that provides a convenient way of running plugins and scripts from external applications like [Alfred](http://www.alfredapp.com/) using [AppleScript](http://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html) scripts. 
 
-This technique works greate both with sandboxed and non-sandboxed versions of Sketch App. You have several options of running a script that are listed out below:
+This technique works greate both with sandboxed and non-sandboxed versions of Sketch App. You have several options of running a script that are listed below:
 
 #### Run script at absolute path
 
-> TODO: Description + Sandboxing warning for absolute paths!
+You can run a script file using absolute file path using the following AppleScript code:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
 run script at path "~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/MyPlugins/MakeMePretty.sketchplugin"
 end tell
 ```
+> WARNING: Be sure that your file is located in Sketch App plugins directory. In case it's located outside of it it won't work with sandboxed version of Sketch App downloaded from AppStore and with Sketch Beta since it's sandboxed now too.
 
 #### Run script with relative file path
 
-> TODO: Description + Beta/Release/Sandboxed warning for relative paths!
+If you don't want to mess up with absolute paths, you can use relative paths by puting a `.`(dot) symbol as a first path component instead of plugins root folder. Such path will be automatically resolved and replaced with absolute path depending on what Sketch App version is currently running.
+
+Here is an example of using of relative path in AppleScript:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
@@ -63,18 +66,18 @@ end tell
 
 #### Passing optional data object to the script
 
-Passing data object to the script:
+There is a very handy option to pass some arbitrary parameters to you CocoaScript script in run-time. You can pass any JSON string generated on a side of external app to your sccript using optional `with data` parameter.
 
-> TODO: Decription + Advanced Example + JS Dump.
+Take a lot at the following AppleScript. It passes a JSON string that represents an object that contains `color` field:
 
 ```AppleScript
 tell application "Sketch DevTools Assistant"
 	set colorData to "{ \"color\":\"#FF0000\" }"
-	run script at path "./Playground/Playground.sketchplugin" with data colorData
+	run script at path "./MyPlugins/setColor.sketchplugin" with data colorData
 end tell
 ```
 
-Querying passed object:
+Right after script launch the provided JSON string will be available in your CocoaScript as `$data` variable:
 
 ```JavaScript
 var hexColor=$data.color;
@@ -84,6 +87,20 @@ if(layer) {
     layer.style().fill().color=newColor;
 }
 ```
+
+What happens under the hood is your original script is extended with injected `$data` variable autamatically like this:
+
+```JavaScript
+var $data = JSON.parse("{ \"color\":\"#FF0000\" }");
+var hexColor=$data.color;
+var layer=selection.firstObject();
+if(layer) {
+    var newColor=MSColor.colorWithHex_alpha(hexColor,1);
+    layer.style().fill().color=newColor;
+}
+```
+Then this modified script is saved to a temoprary file and get run.
+
 
 #### Run script as a string
 
@@ -107,7 +124,9 @@ If you discover any issue or have any suggestions for improvement of the plugin,
 
 Sketch DevTools Assistant uses [CocoaScript](http://github.com/ccgus/CocoaScript) framework by [August Mueller](http://github.com/ccgus) for running Sketch plugins using actions or automation.
 
-The [flat Sketch icon desing](https://dribbble.com/shots/1705797-Sketch-App-Icon-Yosemite-Edition?list=users&offset=0) for the app was shamelessly borrowed from [Mehmet Gozetlik](http://dribbble.com/Antrepo). Thanks you Mehmet for the great work! :)
+The [flat Sketch icon desing](http://dribbble.com/shots/1705797-Sketch-App-Icon-Yosemite-Edition?list=users&offset=0) for the app was shamelessly borrowed from [Mehmet Gozetlik](http://dribbble.com/Antrepo). Thanks you Mehmet for the great work! :)
+
+[NSBundle+OBCodeSigningInfo](http://github.com/ole/NSBundle-OBCodeSigningInfo) category by [Ole Begemann](https://github.com/ole) is used in Sketch DevTools Assistant to detect sandboxed version of Sketch App.
 
 ## License
 
