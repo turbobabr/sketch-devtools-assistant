@@ -6,7 +6,7 @@ Sketch DevTools Assistant plays a main role as a helper OSX application that wor
 ## Installation
 1. Download an archived file [Sketch DevTools Assistant.zip]() with compiled app and unzip it
 2. Copy `Sketch DevTools Assistant.app` to the `Applications` folder
-3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu like this: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/open_app.png" width="500" height="398">
+3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu like this: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/open_app.png">
 4. OSX will warn you the this app isn't signed. Click `Open` button to make it a legal citizen: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/warning_dialog.png">
 5. Run the application. If everything works fine you will see the app icon in the tray: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/tray_status.png">
 
