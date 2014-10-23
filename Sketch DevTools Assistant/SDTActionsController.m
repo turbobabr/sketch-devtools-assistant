@@ -178,16 +178,23 @@
     NSString* filePath = [NSString stringWithFormat:@"%@/%@",[(isSandboxed ? (isBeta ? kPluginFolderPathBetaSandboxed : kPluginFolderPathSandboxed) : kPluginFolderPathNormal) stringByExpandingTildeInPath],kExchangeFileName];
     NSDictionary *commandInfo = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:kNilOptions error:nil];
     
-    if(commandInfo[@"command"]) {
-        if([commandInfo[@"command"] isEqualToString:@"RegisterAction"]) {
+    NSString* command=commandInfo[@"command"];
+    if(command) {
+        if([command isEqualToString:@"RegisterAction"]) {
             SDTScriptableAction* action=[[SDTScriptableAction alloc] initWithCommandData:commandInfo[@"data"]];
             [self addAction:action];
             
-        } else if([commandInfo[@"command"] isEqualToString:@"RemoveAction"]) {
+        } else if([command isEqualToString:@"RemoveAction"]) {
             [self removeActionWithID:commandInfo[@"data"][@"id"] target:commandInfo[@"data"][@"target"]];
-        } else if([commandInfo[@"command"] isEqualToString:@"EnableAction"]) {
+        } else if([command isEqualToString:@"EnableAction"]) {
             NSDictionary* data=commandInfo[@"data"];
             [self enableActionWithID:data[@"id"] target:data[@"target"] enabled:[data[@"value"] boolValue]];
+        } else if([command isEqualToString:@"RunAppleScript"]) {
+            
+            NSString* scriptSource=commandInfo[@"script"];
+            
+            NSAppleScript* script=[[NSAppleScript alloc] initWithSource:scriptSource];
+            [script executeAndReturnError:nil];
         }
     }
 }
