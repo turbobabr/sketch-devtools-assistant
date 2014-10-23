@@ -124,6 +124,8 @@ The [flat Sketch icon desing](http://dribbble.com/shots/1705797-Sketch-App-Icon-
 
 [NSBundle+OBCodeSigningInfo](http://github.com/ole/NSBundle-OBCodeSigningInfo) category by [Ole Begemann](https://github.com/ole) is used in Sketch DevTools Assistant to detect sandboxed version of Sketch App.
 
+[NSApplication+MXUtilities](https://gist.github.com/joerick/73670eba228c177bceb3) category by [Joe Rickerby](http://github.com/joerick) is used to provide "Auto-Run" functionality for the application.
+
 ## License
 
 The MIT License (MIT)
