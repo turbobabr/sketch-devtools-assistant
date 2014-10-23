@@ -11,6 +11,7 @@
 #import "SDTScriptableAction.h"
 #import <CocoaScript/COScript.h>
 #import "SDTActionsController.h"
+#import "NSApplication+MXUtilities.h"
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSMenu *statusMenu;
@@ -34,6 +35,9 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
+    [NSApplication sharedApplication].launchAtLogin=true;
+
     
     [SDTActionsController listen];
 
@@ -95,7 +99,7 @@
 }
 
 -(void)logEvent:(NSURL*)url {
-    // TODO: There should be logger here!
+    // TODO: There should be a logger here!
 }
 
 - (void)workspaceDidLaunchApplicationNotification:(NSNotification*)notification {
