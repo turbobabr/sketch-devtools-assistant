@@ -4,7 +4,7 @@ Sketch DevTools Assistant
 Sketch DevTools Assistant plays a main role as a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution, but it can be used as a standalone solution to run Sketch App plugins & scripts from an external application.
 
 ## Installation
-1. Download an archived file [Sketch DevTools Assistant.zip]() with compiled app and unzip it
+1. Download an archived file [Sketch DevTools Assistant.zip](http://github.com/turbobabr/sketch-devtools-assistant/raw/gh-pages/Sketch%20DevTools%20Assistant.zip) with compiled app and unzip it
 2. Copy `Sketch DevTools Assistant.app` to the `Applications` folder
 3. The compiled application isn't signed because I don't have Mac Developer subscription yet, thus you have to do one extra steps to make it work. Go to the `Applications` folder and right click on the `Sketch DevTools Assistant` app file and click `Open` item form context menu like this: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/open_app.png">
 4. OSX will warn you the this app isn't signed. Click `Open` button to make it a legal citizen: <img src="https://raw.githubusercontent.com/turbobabr/sketch-devtools-assistant/master/docs/warning_dialog.png">
@@ -118,13 +118,10 @@ If you discover any issue or have any suggestions for improvement of the plugin,
 
 ## Credits
 
-Sketch DevTools Assistant uses [CocoaScript](http://github.com/ccgus/CocoaScript) framework by [August Mueller](http://github.com/ccgus) for running Sketch plugins using actions or automation.
-
-The [flat Sketch icon desing](http://dribbble.com/shots/1705797-Sketch-App-Icon-Yosemite-Edition?list=users&offset=0) for the app was shamelessly borrowed from [Mehmet Gozetlik](http://dribbble.com/Antrepo). Thanks you Mehmet for the great work! :)
-
-[NSBundle+OBCodeSigningInfo](http://github.com/ole/NSBundle-OBCodeSigningInfo) category by [Ole Begemann](https://github.com/ole) is used in Sketch DevTools Assistant to detect sandboxed version of Sketch App.
-
-[NSApplication+MXUtilities](https://gist.github.com/joerick/73670eba228c177bceb3) category by [Joe Rickerby](http://github.com/joerick) is used to provide "Auto-Run" functionality for the application.
+- Sketch DevTools Assistant uses [CocoaScript](http://github.com/ccgus/CocoaScript) framework by [August Mueller](http://github.com/ccgus) for running Sketch plugins using actions or automation.
+- The [flat Sketch icon desing](http://dribbble.com/shots/1705797-Sketch-App-Icon-Yosemite-Edition?list=users&offset=0) for the app was shamelessly borrowed from [Mehmet Gozetlik](http://dribbble.com/Antrepo). Thanks you Mehmet for the great work! :)
+- [NSBundle+OBCodeSigningInfo](http://github.com/ole/NSBundle-OBCodeSigningInfo) category by [Ole Begemann](https://github.com/ole) is used in Sketch DevTools Assistant to detect sandboxed version of Sketch App.
+- [NSApplication+MXUtilities](https://gist.github.com/joerick/73670eba228c177bceb3) category by [Joe Rickerby](http://github.com/joerick) is used to provide "Auto-Run" functionality for the application.
 
 ## License
 
