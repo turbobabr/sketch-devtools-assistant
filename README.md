@@ -16,7 +16,7 @@ If you don't want to use unsigned binary you can just clone this repo, compile t
 
 ## Protocol handling & 'Jump To Code' feature
 
-Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides protocol handling functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
+Sketch DevTools Assistant is a helper OSX application that works together with [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) solution and provides [protocol handling](https://developer.mozilla.org/en/docs/Web-based_protocol_handlers) functionality for `Jumpt To Code` feature of DevTools for the following list of IDEs:
 - Atom
 - Sublime Text
 - WebStorm
