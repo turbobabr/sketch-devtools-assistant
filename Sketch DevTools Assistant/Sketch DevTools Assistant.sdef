@@ -22,24 +22,6 @@
                 <cocoa key="data"/>
             </parameter>
         </command>
-		
-        <!--
-		<command name="run trigger" code="fcmd2Run" description="Run Fuzzy Commander process">
-			<cocoa class="FCAppleScriptCommandRun"/>
-			
-			<direct-parameter type="text" optional="yes" description=""/>
-			
-			<parameter name="in workflow" code="work" type="text" optional="no" description="The process identifer">
-				<cocoa key="process"/>
-			</parameter>
-			
-			<parameter name="with argument" code="argu" type="text" optional="yes" description="An optional argument">
-				<cocoa key="argument"/>
-			</parameter>
-			
-		</command>
-         -->
-		
 	</suite>
 	
 </dictionary>

@@ -50,7 +50,11 @@
             NSString* source=[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
             NSString* argument=[NSString stringWithFormat:@"var $data = JSON.parse('%@');\n",data];
             
-            NSString* processedSource=[argument stringByAppendingString:source];
+            
+            NSString* processedSource=[argument stringByAppendingString:[NSString stringWithFormat:@"var $modifierFlags = %@;\n",[@([NSEvent modifierFlags]) stringValue]]];
+            
+            processedSource=[processedSource stringByAppendingString:source];
+            
             [processedSource writeToFile:tempFilePath atomically:NO encoding:NSUTF8StringEncoding error:nil];
             
             [SDTActionsController runScriptAtPath:tempFilePath target:env[@"target"]];
