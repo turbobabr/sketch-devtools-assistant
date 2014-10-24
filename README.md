@@ -110,7 +110,7 @@ This helper application supports so called `Scriptable Actions`. At this very mo
 
 ## Change Log
 
-### v1.0 - October 24,2014
+#### v1.0: October 24, 2014
 - There will be bugs! :)
 
 ## Feedback
