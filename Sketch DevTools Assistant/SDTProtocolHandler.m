@@ -13,10 +13,14 @@
 
 +(BOOL)openFile:(NSString*)filePath withIDE:(NSString*)ide atLine:(NSInteger)line {
     ide=[ide lowercaseString];
+    
+    NSString* sublime2LaunchPath=@"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl";
+    NSString* sublime3LaunchPath=@"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl";
+    
     NSDictionary* factory=
     @{
       @"sublime": @{
-              @"launchPath": @"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl",
+              @"launchPath": ([[NSFileManager defaultManager] fileExistsAtPath:sublime2LaunchPath]) ? sublime2LaunchPath : sublime3LaunchPath,
               @"arguments": @[[NSString stringWithFormat:@"%@:%ld",filePath,line]]
               },
       @"textmate": @{
